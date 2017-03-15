@@ -1,1 +1,7 @@
-"use strict";$(document).on("click",'a[href^="#"]',function(t){t.preventDefault(),$("html, body").animate({scrollTop:$($.attr(this,"href")).offset().top},750)});
+$(document).on('click', 'a[href^="#"]', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 750);
+});
